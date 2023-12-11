@@ -5,3 +5,5 @@ https://docs.kernel.org/admin-guide/binfmt-misc.html#:~:text=You%20can%20enable%
 apt install binfmt-support qemu-user-static
 update-binfmts --display
 update-binfmts --enable qemu-arm
+
+tar --xattrs-include='*.*' --numeric-owner
