@@ -117,8 +117,8 @@ readonly VIRTUAL_PKG=".make-$PROGNAME"
 
 : ${APK:="apk"}
 : ${APK_OPTS:="--no-progress"}
-: ${APK_TOOLS_URI:="https://gitlab.alpinelinux.org/api/v4/projects/5/packages/generic//v2.14.0/armhf/apk.static"}
-: ${APK_TOOLS_SHA256:="878a000702c1faeb9fdab594dc071b5a1c40647646c96b07aa35dcd43247567a"}
+: ${APK_TOOLS_URI:="https://gitlab.alpinelinux.org/api/v4/projects/5/packages/generic//v2.14.0/armv7/apk.static"}
+: ${APK_TOOLS_SHA256:="9d68d7cb0bbb46e02b7616e030eba7be1697d84cabf61e0a186a6b7522ffb09e"}
 
 
 # Set pipefail if supported.

@@ -1,9 +1,10 @@
 qemu-system-arm \
         -machine virt   \
         -cpu cortex-a7  \
-        -smp 4  \
+        -smp 1  \
+        -m 256m	\
         -kernel vmlinuz-lts -initrd initramfs-lts       \
-        -append "root=/dev/vda1 rootfstype=ext4 console=ttyAMA0 debug loglevel=8"       \
+        -append "root=/dev/vda rootfstype=ext4 rootflags=rw console=ttyAMA0 debug loglevel=8 debug_init"       \
         -device virtio-blk-device,drive=vda \
         -drive if=none,file=vda.qcow2,format=qcow2,id=vda \
         -device virtio-net-device,netdev=net0 \
